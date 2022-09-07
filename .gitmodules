@@ -1,0 +1,3 @@
+[submodule "jkr-core"]
+	path = jkr-core
+	url = git@github.com:GispoCoding/jkr-core.git
