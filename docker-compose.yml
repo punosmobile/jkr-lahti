@@ -1,0 +1,30 @@
+services:
+
+  # Override db service from jkr-core/docker-compose.yml
+  db:
+    build:
+      context: ./jkr-core/docker/postgis
+    volumes:
+      - postgis-data:/var/lib/postgresql/data
+      - ./jkr-core/docker/postgis/init_db:/docker-entrypoint-initdb.d
+      - ./jkr-core/docker/postgis/postgresql.conf:/etc/postgresql/postgresql.conf
+
+  # Override flyway service from jkr-core/docker-compose.yml
+  flyway:
+    volumes:
+      - ./jkr-core/db/migrations:/flyway/sql
+      - ./jkr-core/db/flyway.conf:/flyway/conf/flyway.conf
+
+  flyway_lahti:
+    image: flyway/flyway
+    depends_on:
+      - db
+    profiles: [ "migration" ]
+    environment:
+      - FLYWAY_USER=${JKR_USER}
+      - FLYWAY_PASSWORD=${JKR_PASSWORD}
+      - FLYWAY_URL=jdbc:postgresql://db/${JKR_DB}
+    volumes:
+      - ./db/migrations:/flyway/sql
+      - ./db/flyway.conf:/flyway/conf/flyway.conf
+    command: migrate
