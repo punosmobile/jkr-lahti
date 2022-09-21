@@ -8,6 +8,15 @@ Integroi tietoja DVV, Lahden päätöstietojen ja jätehuoltoyritysten kuljetust
 
 Toteutus 2022
 
+## Tietokantakuvaus
+
+Tietokannan dokumentaatio löytyy kansiosta [docs/db](docs/db/README.md)
+
+![docs/jkr-db.png](docs/jkr-db.png)
+[docs/jkr-db.png](docs/jkr-db.png)
+
+
+
 ## Kehitysympäristön pystytys
 
 ```shell
