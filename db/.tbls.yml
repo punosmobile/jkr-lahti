@@ -1,0 +1,9 @@
+name: JKR-Tietokanta
+desc: Jätteenkuljetusrekisterin tietokantamallin kuvaus
+exclude:
+  - public.spatial_ref_sys
+  - public.geography_columns
+  - public.geometry_columns
+  - jkr.flyway_schema_history
+  - jkr_lahti.flyway_schema_history
+  - public.pg_stat_statements
