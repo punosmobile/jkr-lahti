@@ -6,7 +6,7 @@ Lahden kaupungin jätehuollon kuljetusten seurantaan kehitettävä rekisteri (Po
 
 Integroi tietoja DVV, Lahden päätöstietojen ja jätehuoltoyritysten kuljetustiedoista. 
 
-Toteutus 2022
+Toteutus 2022-2023
 
 ## Tietokantakuvaus
 
