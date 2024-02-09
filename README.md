@@ -1,20 +1,13 @@
 # Jkr-Lahti
 
-Lahden jätteenkuljetusrekisteri
+Lahden seudun jätehuoltoviranomaisen jätehuollon seurantaan kehitettävä rekisteri (PostGIS/QGIS).
 
-Lahden kaupungin jätehuollon kuljetusten seurantaan kehitettävä rekisteri (PostGIS/QGIS).
-
-Integroi tietoja DVV, Lahden päätöstietojen ja jätehuoltoyritysten kuljetustiedoista. 
-
-Toteutus 2022-2023
+Toteutus 2022-2024
 
 ## Tietokantakuvaus
 
-Tietokannan dokumentaatio löytyy kansiosta [docs/db](docs/db/README.md)
-
-![docs/jkr-db.png](docs/jkr-db.png)
-[docs/jkr-db.png](docs/jkr-db.png)
-
+![docs/Lahti_jkr_db_model_7_2_2024.png](docs/Lahti_jkr_db_model_7_2_2024.png)
+[docs/Lahti_jkr_db_model_7_2_2024.png](docs/Lahti_jkr_db_model_7_2_2024.png)
 
 
 ## Kehitysympäristön pystytys
